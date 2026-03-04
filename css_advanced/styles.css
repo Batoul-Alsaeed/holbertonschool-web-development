@@ -1,0 +1,55 @@
+/* تنسيق عام للجسم */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الهيدر */
+header {
+    display: flex;                /* وضع اللوجو والروابط بجانب بعض */
+    justify-content: space-between; /* توزيعهم على الأطراف */
+    align-items: center;         /* موازنتهم عمودياً */
+    padding: 20px 10%;           /* مسافة داخلية جانبية */
+}
+
+/* تنسيق البانر (القسم الأول) */
+.banner {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+}
+
+/* تنسيق الزر المشهور */
+button {
+    background-color: #FF6565;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px; /* لجعل الحواف دائرية كما في الصورة */
+    border: none;
+    text-transform: uppercase;
+}
+
+.features-list {
+    display: flex;            /* هذا السطر هو المسؤول عن جعلهم في سطر واحد */
+    justify-content: center;   /* لتوسيط الكتل في منتصف الصفحة */
+    gap: 20px;                /* لإضافة مسافة متساوية بين كل كتلة وأخرى */
+    flex-wrap: wrap;          /* لجعل العناصر تنزل لسطر جديد إذا كانت الشاشة صغيرة (مثل الجوال) */
+    text-align: center;  /* يوسط الكلام */
+}
+
+/* اختياري: لتنسيق كل كتلة داخلية لتكون مرتبة */
+.features-list > div {
+    flex: 1;                  /* لجعل جميع الكتل تأخذ نفس العرض بالتساوي */
+    text-align: center;       /* لتوسيط النصوص والصور داخل كل كتلة */
+    max-width: 250px;         /* لمنع الكتل من التمدد بشكل كبير جداً */
+}
+
+.features-list {
+    display: flex;       /* السحر هنا: يصفهم بجانب بعض */
+    gap: 20px;           /* يترك مسافة بينهم */
+    text-align: center;  /* يوسط الكلام */
+}
