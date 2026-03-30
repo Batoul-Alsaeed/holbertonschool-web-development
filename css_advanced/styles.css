@@ -1,4 +1,4 @@
-/* تنسيق عام للجسم */
+/* تنسيق عام  */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #ffffff;
@@ -6,12 +6,15 @@ body {
     padding: 0;
 }
 
-/* تنسيق الهيدر */
+/* الهيدر */
 header {
-    display: flex;                /* وضع اللوجو والروابط بجانب بعض */
-    justify-content: space-between; /* توزيعهم على الأطراف */
-    align-items: center;         /* موازنتهم عمودياً */
-    padding: 20px 10%;           /* مسافة داخلية جانبية */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
 }
 
 /* تنسيق البانر (القسم الأول) */
@@ -27,8 +30,8 @@ header {
 button {
     background-color: #FF6565;
     color: white;
-    padding: 15px 30px;
-    border-radius: 25px; /* لجعل الحواف دائرية كما في الصورة */
+    padding: 44px 162px;
+    border-radius: 100px; /* لجعل الحواف دائرية كما في الصورة */
     border: none;
     text-transform: uppercase;
 }
